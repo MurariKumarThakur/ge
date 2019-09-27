@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\walkingtree\workspace\GEProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">39 methods, 3 failed,  32 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.RouteComponant" hash-for-method="VerifyPageNotFoundInCaseOfWrongUrl">VerifyPageNotFoundInCaseOfWrongUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.HeaderComponant" hash-for-method="verify_DefaultMenuSelection">verify_DefaultMenuSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.HeaderComponant" hash-for-method="verify_IsHeaderDisplaying">verify_IsHeaderDisplaying</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.ThemeComponant" hash-for-method="veifyIsValueDisplayingInThemeDropDown">veifyIsValueDisplayingInThemeDropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.Temperature" hash-for-method="veifyTemperatureIcon">veifyTemperatureIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.WindspeedComponant" hash-for-method="veifyWindspeedIcon">veifyWindspeedIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.Temperature" hash-for-method="verifyAccordingToQualityDataColorIsChanging">verifyAccordingToQualityDataColorIsChanging</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.WindspeedComponant" hash-for-method="verifyAccordingToQualityDataColorIsChanging">verifyAccordingToQualityDataColorIsChanging</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.ThemeComponant" hash-for-method="verifyIsDefaultThemeApplying">verifyIsDefaultThemeApplying</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.Temperature" hash-for-method="verifyIsTemperatureDataDisplaying">verifyIsTemperatureDataDisplaying</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.Temperature" hash-for-method="verifyIsTemperatureRenderOnUi">verifyIsTemperatureRenderOnUi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.ThemeComponant" hash-for-method="verifyIsThemeChanging">verifyIsThemeChanging</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.ThemeComponant" hash-for-method="verifyIsThemeDisplaying">verifyIsThemeDisplaying</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.WindspeedComponant" hash-for-method="verifyIsWindspeedDataDisplaying">verifyIsWindspeedDataDisplaying</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.WindspeedComponant" hash-for-method="verifyIsWindspeedRenderOnUi">verifyIsWindspeedRenderOnUi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.LogoComponant" hash-for-method="verifyLogPositionAccordingToConfiguration">verifyLogPositionAccordingToConfiguration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.LogoComponant" hash-for-method="verifyLogoSrc">verifyLogoSrc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.ThemeComponant" hash-for-method="verifySelectedThemeNameAfterSelection">verifySelectedThemeNameAfterSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.Temperature" hash-for-method="verifyTemperatureComponantPositionOnUi">verifyTemperatureComponantPositionOnUi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.ThemeComponant" hash-for-method="verifyThemeAfterNavigation">verifyThemeAfterNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.ThemeComponant" hash-for-method="verifyThemeComponentPositionOnHeaderSection">verifyThemeComponentPositionOnHeaderSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.WindspeedComponant" hash-for-method="verifyWindSpeedComponantPositionOnUi">verifyWindSpeedComponantPositionOnUi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.GridFilter" hash-for-method="verify_AllFilterAreUnselactable">verify_AllFilterAreUnselactable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.GridFilter" hash-for-method="verify_AllFilterStatusAreSelectable">verify_AllFilterStatusAreSelectable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.GridFilter" hash-for-method="verify_AllFilterStatusByDefaultSelected">verify_AllFilterStatusByDefaultSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.GridFilter" hash-for-method="verify_FilterBy_FeatureExistance">verify_FilterBy_FeatureExistance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.HeaderComponant" hash-for-method="verify_ItemCountOnHeaderSection">verify_ItemCountOnHeaderSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.HeaderComponant" hash-for-method="verify_MainMenuCountOnHeaderSection">verify_MainMenuCountOnHeaderSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.HeaderComponant" hash-for-method="verify_MainMenuNavigation">verify_MainMenuNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.HeaderComponant" hash-for-method="verify_MainMenuTitleOnHeaderSection">verify_MainMenuTitleOnHeaderSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.GridFilter" hash-for-method="verify_TurbineDataCountInGridAndFilterSectionDataCount">verify_TurbineDataCountInGridAndFilterSectionDataCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.GridFilter" hash-for-method="verify_appliedFileterNameFirstLetterIsComingInGridSection">verify_appliedFileterNameFirstLetterIsComingInGridSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.HeaderComponant" hash-for-method="verify_correctHeaderItemsAreDispalying">verify_correctHeaderItemsAreDispalying</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.GridFilter" hash-for-method="verify_filterSectionColorAndTurbineDataColorInGrid">verify_filterSectionColorAndTurbineDataColorInGrid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.LogoComponant" hash-for-method="vreifyLogoIsDisplayingOnUi">vreifyLogoIsDisplayingOnUi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.RouteComponant" hash-for-method="VerifyIsDefaultUrlApplying">VerifyIsDefaultUrlApplying</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.RouteComponant" hash-for-method="VerifyIsPageNavigationWorking">VerifyIsPageNavigationWorking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.RouteComponant" hash-for-method="verifyAfterRefreshIsPageChanging">verifyAfterRefreshIsPageChanging</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="geProjectComponant.RouteComponant" hash-for-method="verifyIsBrowserSavingPageNavigationHistory">verifyIsBrowserSavingPageNavigationHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">geProjectComponant.HeaderComponant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_DefaultMenuSelection">
+                  </a> <!-- verify_DefaultMenuSelection -->
+                  <span class="method-name">verify_DefaultMenuSelection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;null&gt; but was:&lt;Monitor&gt;
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:147)
+	at geProjectComponant.HeaderComponant.verify_DefaultMenuSelection(HeaderComponant.java:146)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_IsHeaderDisplaying">
+                  </a> <!-- verify_IsHeaderDisplaying -->
+                  <span class="method-name">verify_IsHeaderDisplaying</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at geProjectComponant.HeaderComponant.verify_IsHeaderDisplaying(HeaderComponant.java:48)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">geProjectComponant.RouteComponant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPageNotFoundInCaseOfWrongUrl">
+                  </a> <!-- VerifyPageNotFoundInCaseOfWrongUrl -->
+                  <span class="method-name">VerifyPageNotFoundInCaseOfWrongUrl</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at geProjectComponant.RouteComponant.VerifyPageNotFoundInCaseOfWrongUrl(RouteComponant.java:48)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">geProjectComponant.ThemeComponant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="veifyIsValueDisplayingInThemeDropDown">
+                  </a> <!-- veifyIsValueDisplayingInThemeDropDown -->
+                  <span class="method-name">veifyIsValueDisplayingInThemeDropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsDefaultThemeApplying">
+                  </a> <!-- verifyIsDefaultThemeApplying -->
+                  <span class="method-name">verifyIsDefaultThemeApplying</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsThemeChanging">
+                  </a> <!-- verifyIsThemeChanging -->
+                  <span class="method-name">verifyIsThemeChanging</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsThemeDisplaying">
+                  </a> <!-- verifyIsThemeDisplaying -->
+                  <span class="method-name">verifyIsThemeDisplaying</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySelectedThemeNameAfterSelection">
+                  </a> <!-- verifySelectedThemeNameAfterSelection -->
+                  <span class="method-name">verifySelectedThemeNameAfterSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThemeAfterNavigation">
+                  </a> <!-- verifyThemeAfterNavigation -->
+                  <span class="method-name">verifyThemeAfterNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThemeComponentPositionOnHeaderSection">
+                  </a> <!-- verifyThemeComponentPositionOnHeaderSection -->
+                  <span class="method-name">verifyThemeComponentPositionOnHeaderSection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">geProjectComponant.HeaderComponant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_ItemCountOnHeaderSection">
+                  </a> <!-- verify_ItemCountOnHeaderSection -->
+                  <span class="method-name">verify_ItemCountOnHeaderSection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_MainMenuCountOnHeaderSection">
+                  </a> <!-- verify_MainMenuCountOnHeaderSection -->
+                  <span class="method-name">verify_MainMenuCountOnHeaderSection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_MainMenuNavigation">
+                  </a> <!-- verify_MainMenuNavigation -->
+                  <span class="method-name">verify_MainMenuNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_MainMenuTitleOnHeaderSection">
+                  </a> <!-- verify_MainMenuTitleOnHeaderSection -->
+                  <span class="method-name">verify_MainMenuTitleOnHeaderSection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_correctHeaderItemsAreDispalying">
+                  </a> <!-- verify_correctHeaderItemsAreDispalying -->
+                  <span class="method-name">verify_correctHeaderItemsAreDispalying</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">geProjectComponant.WindspeedComponant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="veifyWindspeedIcon">
+                  </a> <!-- veifyWindspeedIcon -->
+                  <span class="method-name">veifyWindspeedIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccordingToQualityDataColorIsChanging">
+                  </a> <!-- verifyAccordingToQualityDataColorIsChanging -->
+                  <span class="method-name">verifyAccordingToQualityDataColorIsChanging</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsWindspeedDataDisplaying">
+                  </a> <!-- verifyIsWindspeedDataDisplaying -->
+                  <span class="method-name">verifyIsWindspeedDataDisplaying</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsWindspeedRenderOnUi">
+                  </a> <!-- verifyIsWindspeedRenderOnUi -->
+                  <span class="method-name">verifyIsWindspeedRenderOnUi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWindSpeedComponantPositionOnUi">
+                  </a> <!-- verifyWindSpeedComponantPositionOnUi -->
+                  <span class="method-name">verifyWindSpeedComponantPositionOnUi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">geProjectComponant.GridFilter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_AllFilterAreUnselactable">
+                  </a> <!-- verify_AllFilterAreUnselactable -->
+                  <span class="method-name">verify_AllFilterAreUnselactable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_AllFilterStatusAreSelectable">
+                  </a> <!-- verify_AllFilterStatusAreSelectable -->
+                  <span class="method-name">verify_AllFilterStatusAreSelectable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_AllFilterStatusByDefaultSelected">
+                  </a> <!-- verify_AllFilterStatusByDefaultSelected -->
+                  <span class="method-name">verify_AllFilterStatusByDefaultSelected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_FilterBy_FeatureExistance">
+                  </a> <!-- verify_FilterBy_FeatureExistance -->
+                  <span class="method-name">verify_FilterBy_FeatureExistance</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_TurbineDataCountInGridAndFilterSectionDataCount">
+                  </a> <!-- verify_TurbineDataCountInGridAndFilterSectionDataCount -->
+                  <span class="method-name">verify_TurbineDataCountInGridAndFilterSectionDataCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_appliedFileterNameFirstLetterIsComingInGridSection">
+                  </a> <!-- verify_appliedFileterNameFirstLetterIsComingInGridSection -->
+                  <span class="method-name">verify_appliedFileterNameFirstLetterIsComingInGridSection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_filterSectionColorAndTurbineDataColorInGrid">
+                  </a> <!-- verify_filterSectionColorAndTurbineDataColorInGrid -->
+                  <span class="method-name">verify_filterSectionColorAndTurbineDataColorInGrid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">geProjectComponant.Temperature</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="veifyTemperatureIcon">
+                  </a> <!-- veifyTemperatureIcon -->
+                  <span class="method-name">veifyTemperatureIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccordingToQualityDataColorIsChanging">
+                  </a> <!-- verifyAccordingToQualityDataColorIsChanging -->
+                  <span class="method-name">verifyAccordingToQualityDataColorIsChanging</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsTemperatureDataDisplaying">
+                  </a> <!-- verifyIsTemperatureDataDisplaying -->
+                  <span class="method-name">verifyIsTemperatureDataDisplaying</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsTemperatureRenderOnUi">
+                  </a> <!-- verifyIsTemperatureRenderOnUi -->
+                  <span class="method-name">verifyIsTemperatureRenderOnUi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTemperatureComponantPositionOnUi">
+                  </a> <!-- verifyTemperatureComponantPositionOnUi -->
+                  <span class="method-name">verifyTemperatureComponantPositionOnUi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">geProjectComponant.LogoComponant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogPositionAccordingToConfiguration">
+                  </a> <!-- verifyLogPositionAccordingToConfiguration -->
+                  <span class="method-name">verifyLogPositionAccordingToConfiguration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoSrc">
+                  </a> <!-- verifyLogoSrc -->
+                  <span class="method-name">verifyLogoSrc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="vreifyLogoIsDisplayingOnUi">
+                  </a> <!-- vreifyLogoIsDisplayingOnUi -->
+                  <span class="method-name">vreifyLogoIsDisplayingOnUi</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">geProjectComponant.RouteComponant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyIsDefaultUrlApplying">
+                  </a> <!-- VerifyIsDefaultUrlApplying -->
+                  <span class="method-name">VerifyIsDefaultUrlApplying</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyIsPageNavigationWorking">
+                  </a> <!-- VerifyIsPageNavigationWorking -->
+                  <span class="method-name">VerifyIsPageNavigationWorking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAfterRefreshIsPageChanging">
+                  </a> <!-- verifyAfterRefreshIsPageChanging -->
+                  <span class="method-name">verifyAfterRefreshIsPageChanging</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIsBrowserSavingPageNavigationHistory">
+                  </a> <!-- verifyIsBrowserSavingPageNavigationHistory -->
+                  <span class="method-name">verifyIsBrowserSavingPageNavigationHistory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\walkingtree\workspace\GEProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;geProjectComponant.RouteComponant&quot;/&gt;
+      &lt;class name=&quot;geProjectComponant.HeaderComponant&quot;/&gt;
+      &lt;class name=&quot;geProjectComponant.LogoComponant&quot;/&gt;
+      &lt;class name=&quot;geProjectComponant.ThemeComponant&quot;/&gt;
+      &lt;class name=&quot;geProjectComponant.Temperature&quot;/&gt;
+      &lt;class name=&quot;geProjectComponant.WindspeedComponant&quot;/&gt;
+      &lt;class name=&quot;geProjectComponant.GridFilter&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test name=&quot;Test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;geProjectComponant.ThemeComponant&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyIsThemeDisplaying&quot;/&gt;
+          &lt;include name=&quot;verifyIsThemeChanging&quot;/&gt;
+          &lt;include name=&quot;verifyThemeAfterNavigation&quot;/&gt;
+          &lt;include name=&quot;verifyThemeComponentPositionOnHeaderSection&quot;/&gt;
+          &lt;include name=&quot;veifyIsValueDisplayingInThemeDropDown&quot;/&gt;
+          &lt;include name=&quot;verifySelectedThemeNameAfterSelection&quot;/&gt;
+          &lt;include name=&quot;verifyIsDefaultThemeApplying&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- geProjectComponant.ThemeComponant --&gt;
+      &lt;class name=&quot;geProjectComponant.HeaderComponant&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verify_IsHeaderDisplaying&quot;/&gt;
+          &lt;include name=&quot;fatchReportInformation&quot;/&gt;
+          &lt;include name=&quot;verify_MainMenuTitleOnHeaderSection&quot;/&gt;
+          &lt;include name=&quot;verify_MainMenuCountOnHeaderSection&quot;/&gt;
+          &lt;include name=&quot;verify_ItemCountOnHeaderSection&quot;/&gt;
+          &lt;include name=&quot;verify_MainMenuNavigation&quot;/&gt;
+          &lt;include name=&quot;verify_correctHeaderItemsAreDispalying&quot;/&gt;
+          &lt;include name=&quot;verify_DefaultMenuSelection&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- geProjectComponant.HeaderComponant --&gt;
+      &lt;class name=&quot;geProjectComponant.WindspeedComponant&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyWindSpeedComponantPositionOnUi&quot;/&gt;
+          &lt;include name=&quot;verifyIsWindspeedRenderOnUi&quot;/&gt;
+          &lt;include name=&quot;verifyIsWindspeedDataDisplaying&quot;/&gt;
+          &lt;include name=&quot;veifyWindspeedIcon&quot;/&gt;
+          &lt;include name=&quot;verifyAccordingToQualityDataColorIsChanging&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- geProjectComponant.WindspeedComponant --&gt;
+      &lt;class name=&quot;geProjectComponant.GridFilter&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verify_TurbineDataCountInGridAndFilterSectionDataCount&quot;/&gt;
+          &lt;include name=&quot;verify_appliedFileterNameFirstLetterIsComingInGridSection&quot;/&gt;
+          &lt;include name=&quot;verify_AllFilterStatusByDefaultSelected&quot;/&gt;
+          &lt;include name=&quot;verify_filterSectionColorAndTurbineDataColorInGrid&quot;/&gt;
+          &lt;include name=&quot;verify_FilterBy_FeatureExistance&quot;/&gt;
+          &lt;include name=&quot;verify_AllFilterStatusAreSelectable&quot;/&gt;
+          &lt;include name=&quot;verify_AllFilterAreUnselactable&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- geProjectComponant.GridFilter --&gt;
+      &lt;class name=&quot;geProjectComponant.LogoComponant&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyLogoSrc&quot;/&gt;
+          &lt;include name=&quot;verifyLogPositionAccordingToConfiguration&quot;/&gt;
+          &lt;include name=&quot;vreifyLogoIsDisplayingOnUi&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- geProjectComponant.LogoComponant --&gt;
+      &lt;class name=&quot;geProjectComponant.Temperature&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;veifyTemperatureIcon&quot;/&gt;
+          &lt;include name=&quot;verifyAccordingToQualityDataColorIsChanging&quot;/&gt;
+          &lt;include name=&quot;verifyIsTemperatureDataDisplaying&quot;/&gt;
+          &lt;include name=&quot;verifyIsTemperatureRenderOnUi&quot;/&gt;
+          &lt;include name=&quot;verifyTemperatureComponantPositionOnUi&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- geProjectComponant.Temperature --&gt;
+      &lt;class name=&quot;geProjectComponant.RouteComponant&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;openBrowser&quot;/&gt;
+          &lt;include name=&quot;VerifyPageNotFoundInCaseOfWrongUrl&quot;/&gt;
+          &lt;include name=&quot;fatchReportInformation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- geProjectComponant.RouteComponant --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (7 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test(failed) (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(39);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyPageNotFoundInCaseOfWrongUrl')
+data.setCell(0, 2, 'geProjectComponant.RouteComponant')
+data.setCell(0, 3, 30287);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_DefaultMenuSelection')
+data.setCell(1, 2, 'geProjectComponant.HeaderComponant')
+data.setCell(1, 3, 30055);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verify_IsHeaderDisplaying')
+data.setCell(2, 2, 'geProjectComponant.HeaderComponant')
+data.setCell(2, 3, 30008);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyIsDefaultUrlApplying')
+data.setCell(3, 2, 'geProjectComponant.RouteComponant')
+data.setCell(3, 3, 5188);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyIsBrowserSavingPageNavigationHistory')
+data.setCell(4, 2, 'geProjectComponant.RouteComponant')
+data.setCell(4, 3, 4672);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAfterRefreshIsPageChanging')
+data.setCell(5, 2, 'geProjectComponant.RouteComponant')
+data.setCell(5, 3, 2070);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'VerifyIsPageNavigationWorking')
+data.setCell(6, 2, 'geProjectComponant.RouteComponant')
+data.setCell(6, 3, 401);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verify_FilterBy_FeatureExistance')
+data.setCell(7, 2, 'geProjectComponant.GridFilter')
+data.setCell(7, 3, 4);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyIsTemperatureDataDisplaying')
+data.setCell(8, 2, 'geProjectComponant.Temperature')
+data.setCell(8, 3, 3);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verify_MainMenuNavigation')
+data.setCell(9, 2, 'geProjectComponant.HeaderComponant')
+data.setCell(9, 3, 3);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyThemeAfterNavigation')
+data.setCell(10, 2, 'geProjectComponant.ThemeComponant')
+data.setCell(10, 3, 3);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifySelectedThemeNameAfterSelection')
+data.setCell(11, 2, 'geProjectComponant.ThemeComponant')
+data.setCell(11, 3, 3);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verify_ItemCountOnHeaderSection')
+data.setCell(12, 2, 'geProjectComponant.HeaderComponant')
+data.setCell(12, 3, 3);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyLogPositionAccordingToConfiguration')
+data.setCell(13, 2, 'geProjectComponant.LogoComponant')
+data.setCell(13, 3, 3);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verify_MainMenuCountOnHeaderSection')
+data.setCell(14, 2, 'geProjectComponant.HeaderComponant')
+data.setCell(14, 3, 2);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyIsWindspeedRenderOnUi')
+data.setCell(15, 2, 'geProjectComponant.WindspeedComponant')
+data.setCell(15, 3, 2);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyThemeComponentPositionOnHeaderSection')
+data.setCell(16, 2, 'geProjectComponant.ThemeComponant')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verify_MainMenuTitleOnHeaderSection')
+data.setCell(17, 2, 'geProjectComponant.HeaderComponant')
+data.setCell(17, 3, 2);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyIsWindspeedDataDisplaying')
+data.setCell(18, 2, 'geProjectComponant.WindspeedComponant')
+data.setCell(18, 3, 2);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'vreifyLogoIsDisplayingOnUi')
+data.setCell(19, 2, 'geProjectComponant.LogoComponant')
+data.setCell(19, 3, 2);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyIsDefaultThemeApplying')
+data.setCell(20, 2, 'geProjectComponant.ThemeComponant')
+data.setCell(20, 3, 2);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyIsThemeChanging')
+data.setCell(21, 2, 'geProjectComponant.ThemeComponant')
+data.setCell(21, 3, 2);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyWindSpeedComponantPositionOnUi')
+data.setCell(22, 2, 'geProjectComponant.WindspeedComponant')
+data.setCell(22, 3, 2);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verify_AllFilterAreUnselactable')
+data.setCell(23, 2, 'geProjectComponant.GridFilter')
+data.setCell(23, 3, 2);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verify_AllFilterStatusAreSelectable')
+data.setCell(24, 2, 'geProjectComponant.GridFilter')
+data.setCell(24, 3, 2);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verify_appliedFileterNameFirstLetterIsComingInGridSection')
+data.setCell(25, 2, 'geProjectComponant.GridFilter')
+data.setCell(25, 3, 2);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyIsThemeDisplaying')
+data.setCell(26, 2, 'geProjectComponant.ThemeComponant')
+data.setCell(26, 3, 2);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyAccordingToQualityDataColorIsChanging')
+data.setCell(27, 2, 'geProjectComponant.WindspeedComponant')
+data.setCell(27, 3, 2);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'veifyWindspeedIcon')
+data.setCell(28, 2, 'geProjectComponant.WindspeedComponant')
+data.setCell(28, 3, 2);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verify_AllFilterStatusByDefaultSelected')
+data.setCell(29, 2, 'geProjectComponant.GridFilter')
+data.setCell(29, 3, 2);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'veifyIsValueDisplayingInThemeDropDown')
+data.setCell(30, 2, 'geProjectComponant.ThemeComponant')
+data.setCell(30, 3, 2);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verify_filterSectionColorAndTurbineDataColorInGrid')
+data.setCell(31, 2, 'geProjectComponant.GridFilter')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyTemperatureComponantPositionOnUi')
+data.setCell(32, 2, 'geProjectComponant.Temperature')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyLogoSrc')
+data.setCell(33, 2, 'geProjectComponant.LogoComponant')
+data.setCell(33, 3, 1);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'verifyAccordingToQualityDataColorIsChanging')
+data.setCell(34, 2, 'geProjectComponant.Temperature')
+data.setCell(34, 3, 1);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'veifyTemperatureIcon')
+data.setCell(35, 2, 'geProjectComponant.Temperature')
+data.setCell(35, 3, 1);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'verifyIsTemperatureRenderOnUi')
+data.setCell(36, 2, 'geProjectComponant.Temperature')
+data.setCell(36, 3, 1);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'verify_correctHeaderItemsAreDispalying')
+data.setCell(37, 2, 'geProjectComponant.HeaderComponant')
+data.setCell(37, 3, 1);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'verify_TurbineDataCountInGridAndFilterSectionDataCount')
+data.setCell(38, 2, 'geProjectComponant.GridFilter')
+data.setCell(38, 3, 1);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">12 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">geProjectComponant.ThemeComponant</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">stopFatchingReportInformation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">geProjectComponant.HeaderComponant</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">stopFatchingReportInformation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">geProjectComponant.WindspeedComponant</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">stopFatchingReportInformation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">geProjectComponant.GridFilter</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">stopFatchingReportInformation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">geProjectComponant.LogoComponant</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">stopFatchingReportInformation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">geProjectComponant.Temperature</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">stopFatchingReportInformation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">geProjectComponant.RouteComponant</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">VerifyIsDefaultUrlApplying</span>
+                <span class="method-start">9174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">fatchReportInformation([TestResult name=VerifyIsDefaultUrlApplying status=SUCCESS method=RouteComponant.VerifyIsDefaultUrlA...)</span>
+                <span class="method-start">14787 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">VerifyIsPageNavigationWorking</span>
+                <span class="method-start">16402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">fatchReportInformation([TestResult name=VerifyIsPageNavigationWorking status=SUCCESS method=RouteComponant.VerifyIsPageNavi...)</span>
+                <span class="method-start">16811 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyPageNotFoundInCaseOfWrongUrl</span>
+                <span class="method-start">16837 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">fatchReportInformation([TestResult name=VerifyPageNotFoundInCaseOfWrongUrl status=FAILURE method=RouteComponant.VerifyPageN...)</span>
+                <span class="method-start">47155 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyAfterRefreshIsPageChanging</span>
+                <span class="method-start">47660 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">fatchReportInformation([TestResult name=verifyAfterRefreshIsPageChanging status=SUCCESS method=RouteComponant.verifyAfterRe...)</span>
+                <span class="method-start">49738 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyIsBrowserSavingPageNavigationHistory</span>
+                <span class="method-start">49770 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">fatchReportInformation([TestResult name=verifyIsBrowserSavingPageNavigationHistory status=SUCCESS method=RouteComponant.ver...)</span>
+                <span class="method-start">54453 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">geProjectComponant.HeaderComponant</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_DefaultMenuSelection</span>
+                <span class="method-start">54474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">fatchReportInformation([TestResult name=verify_DefaultMenuSelection status=FAILURE method=HeaderComponant.verify_DefaultMen...)</span>
+                <span class="method-start">84598 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_IsHeaderDisplaying</span>
+                <span class="method-start">84948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">fatchReportInformation([TestResult name=verify_IsHeaderDisplaying status=FAILURE method=HeaderComponant.verify_IsHeaderDisp...)</span>
+                <span class="method-start">114965 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verify_ItemCountOnHeaderSection</span>
+                <span class="method-start">115043 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_MainMenuCountOnHeaderSection</span>
+                <span class="method-start">115067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_MainMenuNavigation</span>
+                <span class="method-start">115078 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_MainMenuTitleOnHeaderSection</span>
+                <span class="method-start">115110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_correctHeaderItemsAreDispalying</span>
+                <span class="method-start">115121 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">geProjectComponant.LogoComponant</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLogPositionAccordingToConfiguration</span>
+                <span class="method-start">115133 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLogoSrc</span>
+                <span class="method-start">115146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">vreifyLogoIsDisplayingOnUi</span>
+                <span class="method-start">115163 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">geProjectComponant.ThemeComponant</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">veifyIsValueDisplayingInThemeDropDown</span>
+                <span class="method-start">115181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsDefaultThemeApplying</span>
+                <span class="method-start">115200 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsThemeChanging</span>
+                <span class="method-start">115208 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsThemeDisplaying</span>
+                <span class="method-start">115217 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySelectedThemeNameAfterSelection</span>
+                <span class="method-start">115236 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyThemeAfterNavigation</span>
+                <span class="method-start">115247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyThemeComponentPositionOnHeaderSection</span>
+                <span class="method-start">115257 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">geProjectComponant.Temperature</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">veifyTemperatureIcon</span>
+                <span class="method-start">115276 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAccordingToQualityDataColorIsChanging</span>
+                <span class="method-start">115306 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsTemperatureDataDisplaying</span>
+                <span class="method-start">115316 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsTemperatureRenderOnUi</span>
+                <span class="method-start">115338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTemperatureComponantPositionOnUi</span>
+                <span class="method-start">115347 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">geProjectComponant.WindspeedComponant</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">veifyWindspeedIcon</span>
+                <span class="method-start">115359 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAccordingToQualityDataColorIsChanging</span>
+                <span class="method-start">115368 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsWindspeedDataDisplaying</span>
+                <span class="method-start">115398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyIsWindspeedRenderOnUi</span>
+                <span class="method-start">115417 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyWindSpeedComponantPositionOnUi</span>
+                <span class="method-start">115425 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">geProjectComponant.GridFilter</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verify_FilterBy_FeatureExistance</span>
+                <span class="method-start">115445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_AllFilterStatusByDefaultSelected</span>
+                <span class="method-start">115478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_AllFilterAreUnselactable</span>
+                <span class="method-start">115491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_AllFilterStatusAreSelectable</span>
+                <span class="method-start">115529 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_filterSectionColorAndTurbineDataColorInGrid</span>
+                <span class="method-start">115538 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_TurbineDataCountInGridAndFilterSectionDataCount</span>
+                <span class="method-start">115545 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_appliedFileterNameFirstLetterIsComingInGridSection</span>
+                <span class="method-start">115592 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

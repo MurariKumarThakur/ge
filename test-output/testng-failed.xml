@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="geProjectComponant.RouteComponant"/>
+      <class name="geProjectComponant.HeaderComponant"/>
+      <class name="geProjectComponant.LogoComponant"/>
+      <class name="geProjectComponant.ThemeComponant"/>
+      <class name="geProjectComponant.Temperature"/>
+      <class name="geProjectComponant.WindspeedComponant"/>
+      <class name="geProjectComponant.GridFilter"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="geProjectComponant.ThemeComponant">
+        <methods>
+          <include name="verifyIsThemeDisplaying"/>
+          <include name="verifyIsThemeChanging"/>
+          <include name="verifyThemeAfterNavigation"/>
+          <include name="verifyThemeComponentPositionOnHeaderSection"/>
+          <include name="veifyIsValueDisplayingInThemeDropDown"/>
+          <include name="verifySelectedThemeNameAfterSelection"/>
+          <include name="verifyIsDefaultThemeApplying"/>
+        </methods>
+      </class> <!-- geProjectComponant.ThemeComponant -->
+      <class name="geProjectComponant.HeaderComponant">
+        <methods>
+          <include name="verify_IsHeaderDisplaying"/>
+          <include name="fatchReportInformation"/>
+          <include name="verify_MainMenuTitleOnHeaderSection"/>
+          <include name="verify_MainMenuCountOnHeaderSection"/>
+          <include name="verify_ItemCountOnHeaderSection"/>
+          <include name="verify_MainMenuNavigation"/>
+          <include name="verify_correctHeaderItemsAreDispalying"/>
+          <include name="verify_DefaultMenuSelection"/>
+        </methods>
+      </class> <!-- geProjectComponant.HeaderComponant -->
+      <class name="geProjectComponant.WindspeedComponant">
+        <methods>
+          <include name="verifyWindSpeedComponantPositionOnUi"/>
+          <include name="verifyIsWindspeedRenderOnUi"/>
+          <include name="verifyIsWindspeedDataDisplaying"/>
+          <include name="veifyWindspeedIcon"/>
+          <include name="verifyAccordingToQualityDataColorIsChanging"/>
+        </methods>
+      </class> <!-- geProjectComponant.WindspeedComponant -->
+      <class name="geProjectComponant.GridFilter">
+        <methods>
+          <include name="verify_TurbineDataCountInGridAndFilterSectionDataCount"/>
+          <include name="verify_appliedFileterNameFirstLetterIsComingInGridSection"/>
+          <include name="verify_AllFilterStatusByDefaultSelected"/>
+          <include name="verify_filterSectionColorAndTurbineDataColorInGrid"/>
+          <include name="verify_FilterBy_FeatureExistance"/>
+          <include name="verify_AllFilterStatusAreSelectable"/>
+          <include name="verify_AllFilterAreUnselactable"/>
+        </methods>
+      </class> <!-- geProjectComponant.GridFilter -->
+      <class name="geProjectComponant.LogoComponant">
+        <methods>
+          <include name="verifyLogoSrc"/>
+          <include name="verifyLogPositionAccordingToConfiguration"/>
+          <include name="vreifyLogoIsDisplayingOnUi"/>
+        </methods>
+      </class> <!-- geProjectComponant.LogoComponant -->
+      <class name="geProjectComponant.Temperature">
+        <methods>
+          <include name="veifyTemperatureIcon"/>
+          <include name="verifyAccordingToQualityDataColorIsChanging"/>
+          <include name="verifyIsTemperatureDataDisplaying"/>
+          <include name="verifyIsTemperatureRenderOnUi"/>
+          <include name="verifyTemperatureComponantPositionOnUi"/>
+        </methods>
+      </class> <!-- geProjectComponant.Temperature -->
+      <class name="geProjectComponant.RouteComponant">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="VerifyPageNotFoundInCaseOfWrongUrl"/>
+          <include name="fatchReportInformation"/>
+        </methods>
+      </class> <!-- geProjectComponant.RouteComponant -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
